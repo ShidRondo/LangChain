@@ -1,0 +1,11 @@
+LangChain with Claude Laboratory
+
+This laboratory teaches students how to create a simple document question-answering application using LangChain and Claude. The goal is to help students understand how a large language model can answer questions using information from a provided document.
+
+The system uses Claude as the chat model. Claude receives the user's question and the retrieved document context. The model should answer only based on the document and avoid making unsupported answers.
+
+The application also uses embeddings and a vector store. Embeddings convert text into numerical vectors, while FAISS stores and searches those vectors. When the user asks a question, the retriever finds the most relevant document chunks and sends them to Claude.
+
+The important steps in the lab are creating an Anthropic API key, preparing the Python environment, creating a .env file, testing the API key, creating a basic Claude chat chain, and building the document question-answering system.
+
+Students must not share their API keys. The .env file must be added to .gitignore so that private keys are not uploaded to GitHub.
